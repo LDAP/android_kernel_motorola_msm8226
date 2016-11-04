@@ -36,8 +36,13 @@
 #include "mdss_fb.h"
 #include "dsi_v2.h"
 
+<<<<<<< HEAD
 #ifdef CONFIG_POWERSUSPEND
 #include <linux/powersuspend.h>
+=======
+#ifdef CONFIG_STATE_NOTIFIER
+#include <linux/state_notifier.h>
+>>>>>>> 7774212... drivers: Add state notifier driver
 #endif
 
 #define DT_CMD_HDR 6
@@ -792,6 +797,10 @@ static int mdss_dsi_panel_on(struct mdss_panel_data *pdata)
 	set_power_suspend_state_panel_hook(POWER_SUSPEND_INACTIVE);
 #endif
 
+#ifdef CONFIG_STATE_NOTIFIER
+	state_resume();
+#endif
+
 	ctrl = container_of(pdata, struct mdss_dsi_ctrl_pdata,
 				panel_data);
 	mipi  = &pdata->panel_info.mipi;
@@ -907,6 +916,10 @@ static int mdss_dsi_panel_off(struct mdss_panel_data *pdata)
 
 	mfd = pdata->mfd;
 	pr_info("%s+: ctrl=%pK ndx=%d\n", __func__, ctrl, ctrl->ndx);
+
+#ifdef CONFIG_STATE_NOTIFIER
+	state_suspend();
+#endif
 
 	mipi  = &pdata->panel_info.mipi;
 
