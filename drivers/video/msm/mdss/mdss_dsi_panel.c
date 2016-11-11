@@ -36,13 +36,13 @@
 #include "mdss_fb.h"
 #include "dsi_v2.h"
 
-<<<<<<< HEAD
+
 #ifdef CONFIG_POWERSUSPEND
 #include <linux/powersuspend.h>
-=======
+#endif
+
 #ifdef CONFIG_STATE_NOTIFIER
 #include <linux/state_notifier.h>
->>>>>>> 7774212... drivers: Add state notifier driver
 #endif
 
 #define DT_CMD_HDR 6
