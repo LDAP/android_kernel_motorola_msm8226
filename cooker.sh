@@ -13,7 +13,7 @@ export CROSS_COMPILE=/home/lucas/toolchains/arm-linux-androideabi-4.9/bin/arm-li
 architect=arm
 BOOT=arch/arm/boot
 defconfig=titan_defconfig
-archive_name=CM+Kernel-test
+archive_name=CM+Kernel-R4
 my_zip=//home/lucas/kernel/out/titan/nightly
 anykernel=/home/lucas/kernel/zippers/anykernel2/
 

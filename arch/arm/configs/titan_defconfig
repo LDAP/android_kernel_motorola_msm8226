@@ -1,6 +1,7 @@
 #
 # CM+ Modifications
 #
+CONFIG_LOCALVERSION="CM+Kernel-R4"
 CONFIG_FRANDOM=y
 #
 #
