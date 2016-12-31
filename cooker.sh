@@ -9,7 +9,7 @@
 # By default supports Moto G 2014, however can be modified for ANY device.
 
 # Initialise the variables with addresses to be used later -->
-export CROSS_COMPILE=/home/lucas/toolchains/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+export CROSS_COMPILE=/home/lucas/toolchains/UBER/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 architect=arm
 BOOT=arch/arm/boot
 defconfig=titan_defconfig
