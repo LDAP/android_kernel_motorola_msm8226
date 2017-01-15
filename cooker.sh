@@ -13,7 +13,7 @@ export CROSS_COMPILE=/home/lucas/toolchains/UBER/arm-linux-androideabi-4.9/bin/a
 architect=arm
 BOOT=arch/arm/boot
 defconfig=titan_defconfig
-archive_name=CM+Kernel-R5
+archive_name=LOS+Kernel-R5
 my_zip=//home/lucas/kernel/out/titan/nightly
 anykernel=/home/lucas/kernel/zippers/anykernel2/
 
